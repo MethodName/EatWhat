@@ -24,6 +24,8 @@
     [super viewWillAppear:animated];
     self.tabBarController.navigationItem.title = self.title;
     
+    
+    
 }
 
 #pragma mark -创建视图

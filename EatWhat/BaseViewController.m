@@ -21,6 +21,15 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = self.title;
+    
+    
+    //自定义返回按钮
+//     UIImage *backButtonImage = [[UIImage imageNamed:@"icon-fanhui"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 9 ,9, 9)];
+//     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    //backBarButton需要单独设置背景效果。只能在ios6.0以后才能用
+   
+
 }
 
 

@@ -15,6 +15,7 @@
 {
     [super viewDidLoad];
     
+    [self showErrorMessage:@"Created by Bruno Furtado on 18/12/13.Copyright (c) 2013 No Zebra Network. All rights reserved.Created by 唐明明 on 15/12/17.Copyright © 2015年 唐明明. All rights reserved."];
 }
 
 

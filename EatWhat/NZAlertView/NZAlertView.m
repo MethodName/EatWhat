@@ -59,7 +59,7 @@ static BOOL IsPresenting;
         [self addSubview:self.view];
         [self.view setBackgroundColor:[UIColor clearColor]];
         [self.view mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(DV_W,124));
+            make.size.mas_equalTo(CGSizeMake(DV_W,104));
             make.center.equalTo(self);
         }];
         
@@ -67,7 +67,7 @@ static BOOL IsPresenting;
         [self.view addSubview:viewd];
         [viewd setBackgroundColor:[UIColor whiteColor]];
         [viewd mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(DV_W,120));
+            make.size.mas_equalTo(CGSizeMake(DV_W,100));
             make.top.equalTo(self.view.mas_top);
             make.centerX.equalTo(self);
         }];
@@ -81,29 +81,30 @@ static BOOL IsPresenting;
         [viewd addSubview:self.imgIcon];
         [self.imgIcon mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(40, 40));
-            make.top.equalTo(viewd.mas_top).offset(60);
-            make.left.equalTo(viewd.mas_left).offset(20);
+            make.top.equalTo(viewd.mas_top).offset(50);
+            make.left.equalTo(viewd.mas_left).offset(10);
         }];
         
         self.lbTitle = [UILabel new];
         [viewd addSubview:self.lbTitle];
         [self.lbTitle setTextAlignment:NSTextAlignmentCenter];
-        [self.lbTitle setFont:[UIFont systemFontOfSize:20.0f weight:0.3f]];
+        [self.lbTitle setFont:[UIFont systemFontOfSize:18.0f weight:0.3f]];
         [self.lbTitle mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(DV_W*0.9, 20));
+            make.size.mas_equalTo(CGSizeMake(DV_W-60, 20));
             make.top.equalTo(viewd.mas_top).offset(40);
-            make.centerX.equalTo(self.view);
+            make.left.equalTo(viewd.mas_left).offset(50);
         }];
 
         
         self.lbMessage = [UILabel new];
         [viewd addSubview:self.lbMessage];
-        self.lbMessage.numberOfLines = 2;
-        [self.lbMessage setTextAlignment:NSTextAlignmentCenter];
+        self.lbMessage.numberOfLines = 0;
+        [self.lbMessage setFont:[UIFont systemFontOfSize:14.0f]];
+        [self.lbMessage setTextAlignment:NSTextAlignmentLeft];
         [self.lbMessage mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(DV_W*0.9, 42));
-            make.top.equalTo(self.lbTitle.mas_bottom).offset(3);
-            make.centerX.equalTo(self.view);
+            make.size.mas_equalTo(CGSizeMake(DV_W-60, 40));
+            make.top.equalTo(self.lbTitle.mas_bottom);
+            make.left.equalTo(viewd.mas_left).offset(50);
         }];
         
         
@@ -111,7 +112,7 @@ static BOOL IsPresenting;
         [self.view addSubview:self.imgShadow];
         [self.imgShadow mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(DV_W, 5));
-            make.bottom.equalTo(self.view.mas_bottom);
+            make.bottom.equalTo(self.view.mas_bottom).offset(1);
             make.centerX.equalTo(self);
         }];
         
@@ -166,7 +167,6 @@ static BOOL IsPresenting;
         CGRect frame = self.view.frame;
         frame.origin.y = CGRectGetHeight(self.view.frame) - [self originY];
         self.frame = frame;
-        // NSLog(@"初始化__________________%@",NSStringFromCGRect(self.view.frame));
         self.title = title;
         self.message = message;
         self.alertViewStyle = style;
@@ -348,7 +348,7 @@ static BOOL IsPresenting;
 
 - (void)defaultDurationsAndLevels
 {
-    self.alertDuration = 1.5f;
+    self.alertDuration = 2.0f;
     self.animationDuration = 0.6f;
     self.screenBlurLevel = 0.9f;
 }
