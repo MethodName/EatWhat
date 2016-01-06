@@ -8,6 +8,7 @@
 
 #import "TabBarController.h"
 #import "Define.h"
+#import "UIImage+Extras.h"
 
 @interface TabBarController ()
 
@@ -22,6 +23,10 @@
     //设置主题颜色
     [self.tabBar setTintColor:THEME_COLORA(1.0)];
 
+    for (UITabBarItem *item in self.tabBar.items)
+    {
+        item.image = [item.image scaleToSize:CGSizeMake(25, 25)];
+    }
 
 
 

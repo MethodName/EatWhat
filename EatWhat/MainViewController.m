@@ -8,14 +8,29 @@
 
 #import "MainViewController.h"
 
+@interface MainViewController()
+
+@property(nonatomic,weak)UIScrollView *mainScrollView;
+
+
+@end
+
 @implementation MainViewController
+
+#define BarHeight 64
 
 #pragma mark -视图加载后
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setTabBarImage:@"tab_home" SelectedImage:@"tab_home_hover"];
     [self createView];
+    
+    
+    [self.mainScrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+    
     [self reachNetwork];
+    
 }
 
 #pragma mark -视图将要加载时
@@ -23,25 +38,43 @@
 {
     [super viewWillAppear:animated];
     self.tabBarController.navigationItem.title = self.title;
-    
-    
+
+}
+
+#pragma mark -视图加载后
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     
 }
+
+
 
 #pragma mark -创建视图
 -(void)createView
 {
     UIScrollView *mainScrollView = [UIScrollView new];
     [mainScrollView setBackgroundColor:[UIColor whiteColor]];
-    [mainScrollView setPagingEnabled:YES];
+   // [mainScrollView setPagingEnabled:YES];
     [self.view addSubview:mainScrollView];
-    [mainScrollView setContentSize:CGSizeMake(DV_W*3, DV_H*3)];
+    [mainScrollView setBounces:NO];
+    [mainScrollView setContentSize:CGSizeMake(DV_W, (DV_H-108)*2)];
     [mainScrollView mas_makeConstraints:^(MASConstraintMaker *make)
     {
-        make.size.equalTo(self.view);
-        make.center.equalTo(self.view);
+        make.size.mas_equalTo(CGSizeMake(DV_W, DV_H-44));
+        make.top.equalTo(self.view.mas_top);
+        make.left.equalTo(self.view);
     }];
+    self.mainScrollView = mainScrollView;
     
+    UIImageView *image = [UIImageView new];
+    [image setImage:[UIImage imageNamed:@"mainHead"]];
+    [mainScrollView addSubview:image];
+    [image mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(DV_W, DV_W*0.56f));
+        make.left.equalTo(mainScrollView);
+        make.top.equalTo(mainScrollView);
+    }];
     
    
     
@@ -50,14 +83,30 @@
 }
 
 
-#pragma mark -加载数据
--(void)loadData
+#pragma mark -布局自动滚动
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
-    //AFJSONRequestSerializer *request = [AFJSONRequestSerializer serializerWithWritingOptions:NSJSONWritingPrettyPrinted];
-    
-    
-    
+    if (object == self.mainScrollView &&[keyPath isEqualToString:@"contentOffset"])
+    {
+         CGFloat offsetY = self.mainScrollView.contentOffset.y;
+        if (offsetY<=BarHeight)
+        {
+            //CGFloat alpha = 1 - (offsetY/BarHeight);
+            [self hideStatusView];
+        }
+        else
+        {
+            [self addStatusView];
+        }
+        
+    }
 }
+
+
+
+
+
+
 
 
 

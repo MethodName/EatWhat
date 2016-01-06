@@ -23,13 +23,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"icon-fanhui"]
-                                                      forState:0
-                                                    barMetrics:UIBarMetricsDefault];
-    
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"icon-fanhui"]
-                                                      forState:1
-                                                    barMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"icon-fanhui"]
+//                                                      forState:0
+//                                                    barMetrics:UIBarMetricsDefault];
+//    
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"icon-fanhui"]
+//                                                      forState:1
+//                                                    barMetrics:UIBarMetricsDefault];
     
    // [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(9, 9) forBarMetrics:UIBarMetricsDefault];
     

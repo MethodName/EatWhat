@@ -11,6 +11,9 @@
 		99254AF71C3A65B600337F7F /* NZAlertView-Icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 99254AEF1C3A65B600337F7F /* NZAlertView-Icons.bundle */; };
 		99254AF81C3A65B600337F7F /* NZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99254AF11C3A65B600337F7F /* NZAlertView.m */; };
 		99254AF91C3A65B600337F7F /* NZAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99254AF51C3A65B600337F7F /* NZAlertView.xib */; };
+		99254B011C3CD2A000337F7F /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 99254B001C3CD2A000337F7F /* UIImage+Extras.m */; };
+		99254B051C3CFAE400337F7F /* YRActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99254B041C3CFAE400337F7F /* YRActivityIndicator.m */; };
+		99254B1E1C3D03A500337F7F /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 99254B1D1C3D03A500337F7F /* UINavigationBar+Awesome.m */; };
 		998B2D4C1C22BD10004E3760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 998B2D4B1C22BD10004E3760 /* main.m */; };
 		998B2D4F1C22BD10004E3760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 998B2D4E1C22BD10004E3760 /* AppDelegate.m */; };
 		998B2D551C22BD10004E3760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998B2D531C22BD10004E3760 /* Main.storyboard */; };
@@ -76,6 +79,12 @@
 		99254AF31C3A65B600337F7F /* NZAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertViewDelegate.h; sourceTree = "<group>"; };
 		99254AF51C3A65B600337F7F /* NZAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NZAlertView.xib; sourceTree = "<group>"; };
 		99254AFA1C3B56F800337F7F /* NotificationName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationName.h; sourceTree = "<group>"; };
+		99254AFF1C3CD2A000337F7F /* UIImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extras.h"; path = "../UIImage+Extras.h"; sourceTree = "<group>"; };
+		99254B001C3CD2A000337F7F /* UIImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extras.m"; path = "../UIImage+Extras.m"; sourceTree = "<group>"; };
+		99254B031C3CFAE400337F7F /* YRActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRActivityIndicator.h; sourceTree = "<group>"; };
+		99254B041C3CFAE400337F7F /* YRActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRActivityIndicator.m; sourceTree = "<group>"; };
+		99254B1C1C3D03A500337F7F /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		99254B1D1C3D03A500337F7F /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		998B2D471C22BD10004E3760 /* EatWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		998B2D4B1C22BD10004E3760 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		998B2D4D1C22BD10004E3760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -218,6 +227,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		99254B021C3CFAE400337F7F /* YRActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				99254B031C3CFAE400337F7F /* YRActivityIndicator.h */,
+				99254B041C3CFAE400337F7F /* YRActivityIndicator.m */,
+			);
+			path = YRActivityIndicator;
+			sourceTree = "<group>";
+		};
 		998B2D3E1C22BD10004E3760 = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +347,9 @@
 		998B2D8D1C22C2FC004E3760 /* Iibimport */ = {
 			isa = PBXGroup;
 			children = (
+				99254B1C1C3D03A500337F7F /* UINavigationBar+Awesome.h */,
+				99254B1D1C3D03A500337F7F /* UINavigationBar+Awesome.m */,
+				99254B021C3CFAE400337F7F /* YRActivityIndicator */,
 				99254AEB1C3A65B600337F7F /* NZAlertView */,
 				99F7939E1C3A1B3D00C6AF78 /* AFNetworking */,
 				998FE6D11C22EF2F00A8C836 /* Masonry */,
@@ -368,6 +389,8 @@
 		998FE6C21C22EF1000A8C836 /* UIImage-Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				99254AFF1C3CD2A000337F7F /* UIImage+Extras.h */,
+				99254B001C3CD2A000337F7F /* UIImage+Extras.m */,
 				998FE6C31C22EF1000A8C836 /* UIImage+Blur.h */,
 				998FE6C41C22EF1000A8C836 /* UIImage+Blur.m */,
 				998FE6C51C22EF1000A8C836 /* UIImage+ImageWithColor.h */,
@@ -572,6 +595,7 @@
 				998B2D941C22C399004E3760 /* NavigationController.m in Sources */,
 				998FE6CF1C22EF1000A8C836 /* UIImage+ImageWithColor.m in Sources */,
 				998FE6F21C22EF2F00A8C836 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				99254B011C3CD2A000337F7F /* UIImage+Extras.m in Sources */,
 				998B2D9C1C22E8EB004E3760 /* MainViewController.m in Sources */,
 				99F793B11C3A1B3D00C6AF78 /* AFURLSessionManager.m in Sources */,
 				998FE6F01C22EF2F00A8C836 /* MASViewConstraint.m in Sources */,
@@ -580,11 +604,13 @@
 				998FE6ED1C22EF2F00A8C836 /* MASConstraintMaker.m in Sources */,
 				998B2D4F1C22BD10004E3760 /* AppDelegate.m in Sources */,
 				998B2D971C22C3DA004E3760 /* TabBarController.m in Sources */,
+				99254B051C3CFAE400337F7F /* YRActivityIndicator.m in Sources */,
 				99F793AD1C3A1B3D00C6AF78 /* AFNetworkReachabilityManager.m in Sources */,
 				998B2D9F1C22E8FC004E3760 /* TypeViewController.m in Sources */,
 				998FE6F41C22EF2F00A8C836 /* ViewController+MASAdditions.m in Sources */,
 				998FE6D01C22EF1000A8C836 /* UIImage+Screenshot.m in Sources */,
 				99F793AC1C3A1B3D00C6AF78 /* AFHTTPSessionManager.m in Sources */,
+				99254B1E1C3D03A500337F7F /* UINavigationBar+Awesome.m in Sources */,
 				998FE6F11C22EF2F00A8C836 /* NSArray+MASAdditions.m in Sources */,
 				998B2D911C22C363004E3760 /* BaseViewController.m in Sources */,
 				998FE6EE1C22EF2F00A8C836 /* MASLayoutConstraint.m in Sources */,

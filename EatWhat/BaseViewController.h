@@ -10,6 +10,7 @@
 #import "Define.h"
 #import "Masonry.h"
 #import "AFNetworking/AFNetworking.h"
+#import "UINavigationBar+Awesome.h"
 
 
 
@@ -46,7 +47,34 @@
 -(void) showErrorMessage:(NSString*)msg;
 
 
+#pragma mark ================加载动画================
+/**
+ *  开始加载动画
+ */
+-(void)startLoading;
 
+/**
+ *  停止加载动画
+ */
+-(void)stopLoading;
+
+
+
+#pragma mark ================状态栏底部视图================
+
+/**
+ *  添加状态栏底部视图
+ */
+-(void)addStatusView;
+
+/**
+ *  隐藏状态栏底部视图
+ */
+-(void)hideStatusView;
+
+
+#pragma mark -现在tabBar的图片时
+-(void)setTabBarImage:(NSString*)image SelectedImage:(NSString*)selectedImage;
 
 
 
