@@ -46,7 +46,7 @@
     
     [self.navigationController.navigationBar lt_setBackgroundColor:THEME_COLORA(0.0)];
    
-
+   
 }
 
 #pragma mark -视图将要显示时
@@ -78,7 +78,6 @@
      */
     // 如果要检测网络状态的变化,必须用检测管理器的单例的startMonitoring
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    
     // 检测网络连接的单例,网络变化时的回调方法
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         switch (status) {

@@ -11,6 +11,8 @@
 #import "Masonry.h"
 #import "AFNetworking/AFNetworking.h"
 #import "UINavigationBar+Awesome.h"
+#import "TMMAnimation.h"
+#import "JPEngine.h"
 
 
 

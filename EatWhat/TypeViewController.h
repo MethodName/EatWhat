@@ -10,4 +10,6 @@
 
 @interface TypeViewController : BaseViewController
 
+-(void)createView;
+
 @end

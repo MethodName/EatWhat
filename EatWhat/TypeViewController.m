@@ -75,7 +75,7 @@
 }
 
 
-#pragma mark -布局自动滚动
+//#pragma mark -布局自动滚动
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
     if (object == self.mainScrollView &&[keyPath isEqualToString:@"contentOffset"])

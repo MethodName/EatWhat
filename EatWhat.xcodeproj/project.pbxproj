@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99072A3A1C45FB18008A4164 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99072A391C45FB18008A4164 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		99072A431C461662008A4164 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 99072A411C461662008A4164 /* JPEngine.m */; };
+		99072A441C461662008A4164 /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 99072A421C461662008A4164 /* JSPatch.js */; };
 		99254AF61C3A65B600337F7F /* NZAlertViewColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 99254AEE1C3A65B600337F7F /* NZAlertViewColor.m */; };
 		99254AF71C3A65B600337F7F /* NZAlertView-Icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 99254AEF1C3A65B600337F7F /* NZAlertView-Icons.bundle */; };
 		99254AF81C3A65B600337F7F /* NZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99254AF11C3A65B600337F7F /* NZAlertView.m */; };
@@ -14,6 +17,7 @@
 		99254B011C3CD2A000337F7F /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 99254B001C3CD2A000337F7F /* UIImage+Extras.m */; };
 		99254B051C3CFAE400337F7F /* YRActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99254B041C3CFAE400337F7F /* YRActivityIndicator.m */; };
 		99254B1E1C3D03A500337F7F /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 99254B1D1C3D03A500337F7F /* UINavigationBar+Awesome.m */; };
+		997394081C3DF2CB000D54A1 /* TMMAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 997394071C3DF2CB000D54A1 /* TMMAnimation.m */; };
 		998B2D4C1C22BD10004E3760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 998B2D4B1C22BD10004E3760 /* main.m */; };
 		998B2D4F1C22BD10004E3760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 998B2D4E1C22BD10004E3760 /* AppDelegate.m */; };
 		998B2D551C22BD10004E3760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998B2D531C22BD10004E3760 /* Main.storyboard */; };
@@ -71,6 +75,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99072A391C45FB18008A4164 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		99072A3D1C461473008A4164 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/PrivateFrameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		99072A401C461662008A4164 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
+		99072A411C461662008A4164 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
+		99072A421C461662008A4164 /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
 		99254AED1C3A65B600337F7F /* NZAlertViewColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertViewColor.h; sourceTree = "<group>"; };
 		99254AEE1C3A65B600337F7F /* NZAlertViewColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAlertViewColor.m; sourceTree = "<group>"; };
 		99254AEF1C3A65B600337F7F /* NZAlertView-Icons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "NZAlertView-Icons.bundle"; sourceTree = "<group>"; };
@@ -85,6 +94,8 @@
 		99254B041C3CFAE400337F7F /* YRActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRActivityIndicator.m; sourceTree = "<group>"; };
 		99254B1C1C3D03A500337F7F /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		99254B1D1C3D03A500337F7F /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		997394061C3DF2CB000D54A1 /* TMMAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMAnimation.h; sourceTree = "<group>"; };
+		997394071C3DF2CB000D54A1 /* TMMAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMAnimation.m; sourceTree = "<group>"; };
 		998B2D471C22BD10004E3760 /* EatWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		998B2D4B1C22BD10004E3760 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		998B2D4D1C22BD10004E3760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -169,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99072A3A1C45FB18008A4164 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +201,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99072A3F1C461662008A4164 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				99072A401C461662008A4164 /* JPEngine.h */,
+				99072A411C461662008A4164 /* JPEngine.m */,
+				99072A421C461662008A4164 /* JSPatch.js */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
 		99254AEB1C3A65B600337F7F /* NZAlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,9 +258,29 @@
 			path = YRActivityIndicator;
 			sourceTree = "<group>";
 		};
+		997394041C3DF209000D54A1 /* UINavigationBar+Awesome */ = {
+			isa = PBXGroup;
+			children = (
+				99254B1C1C3D03A500337F7F /* UINavigationBar+Awesome.h */,
+				99254B1D1C3D03A500337F7F /* UINavigationBar+Awesome.m */,
+			);
+			name = "UINavigationBar+Awesome";
+			sourceTree = "<group>";
+		};
+		997394051C3DF298000D54A1 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				997394061C3DF2CB000D54A1 /* TMMAnimation.h */,
+				997394071C3DF2CB000D54A1 /* TMMAnimation.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
 		998B2D3E1C22BD10004E3760 = {
 			isa = PBXGroup;
 			children = (
+				99072A3D1C461473008A4164 /* JavaScriptCore.framework */,
+				99072A391C45FB18008A4164 /* JavaScriptCore.framework */,
 				998B2D491C22BD10004E3760 /* EatWhat */,
 				998B2D631C22BD10004E3760 /* EatWhatTests */,
 				998B2D6E1C22BD10004E3760 /* EatWhatUITests */,
@@ -347,8 +389,9 @@
 		998B2D8D1C22C2FC004E3760 /* Iibimport */ = {
 			isa = PBXGroup;
 			children = (
-				99254B1C1C3D03A500337F7F /* UINavigationBar+Awesome.h */,
-				99254B1D1C3D03A500337F7F /* UINavigationBar+Awesome.m */,
+				99072A3F1C461662008A4164 /* JSPatch */,
+				997394051C3DF298000D54A1 /* Animation */,
+				997394041C3DF209000D54A1 /* UINavigationBar+Awesome */,
 				99254B021C3CFAE400337F7F /* YRActivityIndicator */,
 				99254AEB1C3A65B600337F7F /* NZAlertView */,
 				99F7939E1C3A1B3D00C6AF78 /* AFNetworking */,
@@ -563,6 +606,7 @@
 				998B2D851C22BE00004E3760 /* Default-568h@2x.png in Resources */,
 				998B2D881C22BE00004E3760 /* default.png in Resources */,
 				998B2D571C22BD10004E3760 /* Assets.xcassets in Resources */,
+				99072A441C461662008A4164 /* JSPatch.js in Resources */,
 				998B2D551C22BD10004E3760 /* Main.storyboard in Resources */,
 				998B2D871C22BE00004E3760 /* default-736h@2x.png in Resources */,
 				998B2D861C22BE00004E3760 /* default-667h@2x.png in Resources */,
@@ -593,8 +637,10 @@
 			files = (
 				99F793AF1C3A1B3D00C6AF78 /* AFURLRequestSerialization.m in Sources */,
 				998B2D941C22C399004E3760 /* NavigationController.m in Sources */,
+				997394081C3DF2CB000D54A1 /* TMMAnimation.m in Sources */,
 				998FE6CF1C22EF1000A8C836 /* UIImage+ImageWithColor.m in Sources */,
 				998FE6F21C22EF2F00A8C836 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				99072A431C461662008A4164 /* JPEngine.m in Sources */,
 				99254B011C3CD2A000337F7F /* UIImage+Extras.m in Sources */,
 				998B2D9C1C22E8EB004E3760 /* MainViewController.m in Sources */,
 				99F793B11C3A1B3D00C6AF78 /* AFURLSessionManager.m in Sources */,
@@ -761,6 +807,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				INFOPLIST_FILE = EatWhat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -774,6 +824,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				INFOPLIST_FILE = EatWhat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

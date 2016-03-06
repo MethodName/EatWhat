@@ -80,7 +80,13 @@
 
 //G－C－D
 #define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+//G-C-D主线程
 #define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
+
+//延迟GCD时间
+#define DisTime(time)  dispatch_time(DISPATCH_TIME_NOW, time * NSEC_PER_SEC)
+//延迟GCD
+#define DisBACK(disTime,block) dispatch_after(disTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){dispatch_async(dispatch_get_main_queue(), block);});
 
 
 //由角度获取弧度 有弧度获取角度
